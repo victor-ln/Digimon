@@ -1,0 +1,98 @@
+
+.container-search-bar {
+  position: absolute;
+  top: 0;
+  margin-top: 3%;
+  width: 100%;
+  max-width: 550px;
+}
+
+.search-bar {
+  max-height: 70px;
+  background: rgba(7, 7, 152, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(1px) saturate(120%);
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #eeeeff;
+}
+
+::placeholder {
+  color: #eeeeff;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 25px;
+}
+
+.search-bar__suggestion-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 70px; /* Ajuste para mostrar no máximo 2 itens */
+  overflow-y: auto;
+}
+
+.search-bar.suggestion-list-active + .search-bar__suggestion-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-bar__suggestion-box li {
+  background: rgba(7, 7, 152, 0.5);
+  color: #eeeeff;
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-bar.suggestion-list-active + .search-bar__suggestion-box li {
+  display: block;
+}
+
+.search-bar__suggestion-box li:hover {
+  background: rgba(0, 0, 150, 0.7);
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .3em;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 2px solid slategrey;
+  border-radius: 20px;
+}

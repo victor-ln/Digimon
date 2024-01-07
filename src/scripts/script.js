@@ -1,3 +1,6 @@
+let digimons;
+let digimonsNames;
+
 async function getDigimonsFromAPI() {
   const response = await fetch(
     "https://digitalinnovationone.github.io/api-digimon/api/digimon.json"
@@ -63,13 +66,18 @@ function chooseRandomDigimon(digimonsList) {
   return digimonsList[randomIndex];
 }
 
+function renderDigimon(digimon) {
+  renderDigimonImage(digimon.image);
+  renderDigimonName(digimon.name);
+  renderDigimonStatus(digimon);
+}
+
 async function main() {
-  const digimons = await getDigimonsFromAPI();
+  digimons = await getDigimonsFromAPI();
+  digimonsNames = digimons.map(digimon => digimon.name);
   const chosenDigimon = chooseRandomDigimon(digimons);
 
-  renderDigimonImage(chosenDigimon.image);
-  renderDigimonName(chosenDigimon.name);
-  renderDigimonStatus(chosenDigimon);
+  renderDigimon(chosenDigimon);
 }
 
 main();

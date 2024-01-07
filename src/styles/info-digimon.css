@@ -1,0 +1,66 @@
+.info-digimons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: flex-start;
+    height: 20px;
+    margin: 0.3rem 0;
+}
+
+.d-column-bar {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+    justify-content: space-around;
+    font-weight: 400;
+    color: white;
+}
+
+.d-HP__internal {
+    position: absolute;
+    background-color:  #d8d8d8;
+    height: 100%;
+    width: 0;
+    border-radius: 35px;
+}
+
+.d-HP__external {
+    position: relative;
+    background-color:  #ffffff;
+    height: 25px;
+    width: 80%;
+    border-radius: 35px;
+}
+
+.d-ATK__internal {
+    position: absolute;
+    background-color:  #d8d8d8;
+    height: 100%;
+    width: 0;
+    border-radius: 35px;
+}
+
+.d-ATK__external {
+    position: relative;
+    background-color:  #ffffff;
+    height: 25px;
+    width: 80%;
+    border-radius: 35px;
+}
+
+.d-DEF__internal {
+    position: absolute;
+    background-color:  #d8d8d8;
+    height: 100%;
+    width: 0;
+    border-radius: 35px;
+}
+
+.d-DEF__external {
+    position: relative;
+    background-color:  #ffffff;
+    height: 25px;
+    width: 80%;
+    border-radius: 35px;
+}

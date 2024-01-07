@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://digimon.net/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/container.css">
-    <link rel="stylesheet" href="./src/styles/card.css">
-    <link rel="stylesheet" href="./src/styles/info-digimon.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://digimon.net/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/container.css" />
+    <link rel="stylesheet" href="./src/styles/card.css" />
+    <link rel="stylesheet" href="./src/styles/info-digimon.css" />
     <title>Digimons Search</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="container-bg">
-            <div class="card">
-                <section class="card__digimon-logo">
-                    <img src="./src/assets/logo.png" height="70px" alt="Digimon Logo">
-                </section>
+      <div class="container-bg">
+        <div class="card">
+          <section class="card__digimon-logo">
+            <img src="./src/assets/logo.png" height="70px" alt="Digimon Logo" />
+          </section>
 
-                <section class="card__digimon-image-section">
-                    <img id="digimon-img-id" src="" alt="Digimon Image">
-                </section>
+          <section class="card__digimon-image-section">
+            <img id="digimon-img-id" src="" alt="Digimon Image" />
+          </section>
 
-                <section>
-                    <p id="t-idname__digimon"></p>
-                </section>
+          <section>
+            <p id="t-idname__digimon"></p>
+          </section>
 
-                <section class="info-digimons">
-
-                    <div class="info-digimons__column-bar">
-                        <p>HP</p>
-                        <div class="info-digimons__external-column-bar">
-                            <div id="HP-internal-div-id" class="info-digimons__internal-column-bar"></div>
-                        </div>
-                    </div>
-
-                    <div class="info-digimons__column-bar">
-                        <p>ATK</p>
-                        <div class="info-digimons__external-column-bar">
-                            <div id="ATK-internal-div-id" class="info-digimons__internal-column-bar"></div>
-                        </div>
-                    </div>
-
-                    <div class="info-digimons__column-bar">
-                        <p>DEF</p>
-                        <div class="info-digimons__external-column-bar">
-                            <div id="DEF-internal-div-id" class="info-digimons__internal-column-bar"></div>
-                        </div>
-                    </div>
-                </section>
+          <section class="info-digimons">
+            <div class="info-digimons__column-bar">
+              <p>HP</p>
+              <div class="info-digimons__external-column-bar">
+                <div
+                  id="HP-internal-div-id"
+                  class="info-digimons__internal-column-bar"
+                ></div>
+              </div>
             </div>
+
+            <div class="info-digimons__column-bar">
+              <p>ATK</p>
+              <div class="info-digimons__external-column-bar">
+                <div
+                  id="ATK-internal-div-id"
+                  class="info-digimons__internal-column-bar"
+                ></div>
+              </div>
+            </div>
+
+            <div class="info-digimons__column-bar">
+              <p>DEF</p>
+              <div class="info-digimons__external-column-bar">
+                <div
+                  id="DEF-internal-div-id"
+                  class="info-digimons__internal-column-bar"
+                ></div>
+              </div>
+            </div>
+          </section>
         </div>
+      </div>
     </div>
     <script src="./src/scripts/script.js"></script>
-</body>
+  </body>
 </html>

@@ -10,14 +10,14 @@
     transform: perspective(35em) rotateX(18deg);
 }
 
-.i-logo__digimon {
+.card__digimon-logo {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.i-img__digimon {
+.card__digimon-image-section {
    display: flex;
    width: 100%;
    justify-content: center;
@@ -26,7 +26,7 @@
 
 }
 
-.i-img__digimon img {
+.card__digimon-image-section img {
     height: 250px;
     animation: pulseanimation 1s infinite;
 }
